@@ -1,8 +1,9 @@
-module org.example.dailypredictions {
+module org.example.dailyjokes {
     requires javafx.controls;
     requires javafx.fxml;
+    requires com.simtechdata.jokeapi;
 
 
-    opens org.example.dailypredictions to javafx.fxml;
-    exports org.example.dailypredictions;
+    opens org.example.dailyjokes to javafx.fxml;
+    exports org.example.dailyjokes;
 }
