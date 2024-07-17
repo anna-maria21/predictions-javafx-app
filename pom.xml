@@ -61,23 +61,42 @@
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
-                <executions>
-                    <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
-                        <id>default-cli</id>
-                        <configuration>
-                            <mainClass>org.example.dailypredictions/org.example.dailyjokes.PredictionsApplication
-                            </mainClass>
-                            <launcher>app</launcher>
-                            <jlinkZipName>app</jlinkZipName>
-                            <jlinkImageName>app</jlinkImageName>
-                            <noManPages>true</noManPages>
-                            <stripDebug>true</stripDebug>
-                            <noHeaderFiles>true</noHeaderFiles>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            <configuration>
+                <mainClass>org.example.dailypredictions/org.example.dailyjokes.PredictionsApplication</mainClass>
+            </configuration>
+                            <executions>
+                                <execution>
+                                    <id>daily-jokes-javafx-app</id>
+                                    <configuration>
+                                        <launcher>jester</launcher>
+                                        <jlinkZipName>jester</jlinkZipName>
+                                        <jlinkImageName>jester</jlinkImageName>
+                                        <noManPages>true</noManPages>
+                                        <stripDebug>true</stripDebug>
+                                        <noHeaderFiles>true</noHeaderFiles>
+                                    </configuration>
+                                </execution>
+                            </executions>
+                        </plugin>
+            <!--                    <plugin>-->
+<!--                        <groupId>org.openjfx</groupId>-->
+<!--                        <artifactId>javafx-maven-plugin</artifactId>-->
+<!--                        <version>0.0.6</version>-->
+<!--                        <configuration>-->
+<!--                            <vendor>Your Vendor Name</vendor>-->
+<!--                            <mainClass>your.package.MainApp</mainClass>-->
+<!--                        </configuration>-->
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <id>create-installer</id>-->
+<!--                                <phase>package</phase>-->
+<!--                                <goals>-->
+<!--                                    <goal>create-installer</goal>-->
+<!--                                </goals>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
+<!--                    </plugin>-->
+
         </plugins>
     </build>
 </project>
