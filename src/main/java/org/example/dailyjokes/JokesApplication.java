@@ -23,6 +23,9 @@ public class JokesApplication extends Application {
     }
 
     public static void main(String[] args) {
+        System.setProperty("javax.net.debug", "ssl:handshake:verbose");
+        System.setProperty("https.protocols", "TLSv1.3,TLSv1.2");
+        System.setProperty("https.cipherSuites", "TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384");
         launch();
     }
 }
