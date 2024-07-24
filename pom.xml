@@ -48,7 +48,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>org.example.dailyjokes/org.example.dailyjokes.JokesApplication</mainClass>
+                    <mainClass>org.example.dailyjokes/org.example.dailyjokes.Jester</mainClass>
                 </configuration>
                 <executions>
                     <execution>
